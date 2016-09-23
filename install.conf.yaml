@@ -6,5 +6,6 @@
 - clean: ['~', '~/.config']
 
 - link:
+    ~/.config/base16-shell: base16-shell
     ~/.config/zsh: zsh
-
+    ~/.config/nvim: nvim
