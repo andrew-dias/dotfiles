@@ -19,9 +19,6 @@ source $HOME/.config/zsh/aliases.zsh
 # Plugins
 source $HOME/.config/zsh/plugins.zsh
 
-# Custom prompt
-source $HOME/.config/zsh/prompt.zsh
-
 # Dircolors
 source $HOME/.config/zsh/dircolors.zsh
 
