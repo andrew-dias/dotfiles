@@ -9,3 +9,8 @@
     ~/.config/base16-shell: base16-shell
     ~/.config/zsh: zsh
     ~/.config/nvim: nvim
+    ~/.config/git/config: git/config
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+

@@ -1,0 +1,20 @@
+[user]
+	useconfigonly = true
+
+[merge]
+	tool = kdiff3
+[alias]
+
+	status-all = "!for d in `find . -name \".git\"`; do echo \"\n*** Repository: $d ***\" && git --git-dir=$d --work-tree=$d/.. status; done"
+	branch-status = "git-branch-status;"
+	branch-status-all = "git-branch-status-all;"
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit"
+
+[push]
+	default = simple
+
+[pull]
+	rebase = true
+
+[include]
+	path = config.local
