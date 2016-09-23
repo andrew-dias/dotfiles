@@ -1,0 +1,33 @@
+# zsh local function path
+fpath=( "$HOME/.config/zsh/functions" $fpath )
+
+# enable suggestions for commands not found
+source /etc/zsh_command_not_found
+
+# XDG
+source $HOME/.config/zsh/xdg.zsh
+
+# Settings
+source $HOME/.config/zsh/settings.zsh
+
+# Bootstrap
+source $HOME/.config/zsh/bootstrap.zsh
+
+#Aliases
+source $HOME/.config/zsh/aliases.zsh
+
+# Plugins
+source $HOME/.config/zsh/plugins.zsh
+
+# Custom prompt
+source $HOME/.config/zsh/prompt.zsh
+
+# Dircolors
+source $HOME/.config/zsh/dircolors.zsh
+
+# NVM
+source $HOME/.config/zsh/nvm.zsh
+
+# SDKMAN
+source $HOME/.config/zsh/sdkman.zsh
+
