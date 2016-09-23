@@ -10,6 +10,7 @@
     ~/.config/zsh: zsh
     ~/.config/nvim: nvim
     ~/.config/git/config: git/config
+    ~/.config/tmux: tmux
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
