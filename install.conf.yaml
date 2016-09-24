@@ -9,6 +9,7 @@
     ~/.config/base16-shell: base16-shell
     ~/.config/zsh: zsh
     ~/.config/nvim: nvim
+    ~/.config/nvim/autoload/lightline/colorscheme/base16.vim: nvim/vim-base16-lightline/autoload/lightline/colorscheme/base16.vim
     ~/.config/git/config: git/config
     ~/.config/tmux: tmux
 
