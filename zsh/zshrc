@@ -22,9 +22,6 @@ source $HOME/.config/zsh/plugins.zsh
 # Dircolors
 source $HOME/.config/zsh/dircolors.zsh
 
-# NVM
-source $HOME/.config/zsh/nvm.zsh
-
 # SDKMAN
 source $HOME/.config/zsh/sdkman.zsh
 
