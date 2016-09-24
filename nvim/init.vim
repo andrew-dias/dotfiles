@@ -4,6 +4,11 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
+" set lightline theme
+let g:lightline = {
+      \ 'colorscheme': 'base16',
+      \ }
+
 " shortcut to toggle 'set list'
 nmap <leader>l :set list!<CR>
 set list
@@ -13,11 +18,6 @@ set listchars=tab:▸\ ,eol:¬,trail:.
 
 " show line numbers
 set number
-
-" Special character colors 
-"highlight NonText ctermfg=239
-"highlight SpecialKey ctermfg=239
-"highlight LineNr ctermfg=239
 
 " set default tab behaviour
 set tabstop=2

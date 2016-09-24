@@ -16,3 +16,9 @@
 [submodule "zsh/plugins/zsh-nvm"]
 	path = zsh/plugins/zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm.git
+[submodule "nvim/lightline.vim"]
+	path = nvim/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "nvim/vim-base16-lightline"]
+	path = nvim/vim-base16-lightline
+	url = https://github.com/daviesjamie/vim-base16-lightline.git
