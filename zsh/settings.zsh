@@ -10,6 +10,6 @@ bindkey -v
 zstyle :compinstall filename "$HOME/.config/zsh/.zshrc"
 
 autoload -Uz compinit
-compinit -i -d "$HOME/.cache/zsh/zcompdump"
+compinit
 # End of lines added by compinstall
 
