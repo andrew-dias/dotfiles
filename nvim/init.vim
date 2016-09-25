@@ -1,3 +1,6 @@
+" split cache files from configuration
+let g:netrw_home=$XDG_CACHE_HOME.'/nvim'
+
 " set colorscheme to match terminal
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
