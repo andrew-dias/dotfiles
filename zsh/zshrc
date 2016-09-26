@@ -1,3 +1,6 @@
+# add local binaries to PATH
+export PATH=$HOME/.local/bin:$PATH
+
 # zsh local function path
 fpath=( "$HOME/.config/zsh/functions" $fpath )
 
