@@ -13,6 +13,6 @@
     ~/.config/tmux: tmux
 
 - shell:
-    - [ln -s -f $(pwd)/bin/* ~/.local/bin]
+    - [mkdir -p ~/.local/bin && ln -s -f $(pwd)/bin/* ~/.local/bin]
     - [git submodule update --init --recursive, Installing submodules]
 
