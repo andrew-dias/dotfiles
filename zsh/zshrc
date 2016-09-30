@@ -7,9 +7,6 @@ fpath=( "$HOME/.config/zsh/functions" $fpath )
 # enable suggestions for commands not found
 source /etc/zsh_command_not_found
 
-# XDG
-source $HOME/.config/zsh/xdg.zsh
-
 # Settings
 source $HOME/.config/zsh/settings.zsh
 
@@ -32,3 +29,7 @@ source $HOME/.config/zsh/sdkman.zsh
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
+# Allow local customizations in the .zshrc_local_after file
+if [ -f $HOME/.config/zsh-local/zshrc ]; then
+    source $HOME/.config/zsh-local/zshrc
+fi
