@@ -3,14 +3,14 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config', '~/.local/bin']
+- clean: ['~', '~/.config', '~/.config/git', '~/.local/bin']
 
 - link:
     ~/.config/base16-shell: base16-shell
     ~/.config/zsh: zsh
     ~/.config/nvim: nvim
     ~/.config/git/config: git/config
-    ~/.config/tmux: tmux
+    ~/.tmux.conf: tmux/tmux.conf
 
 - shell:
     - [mkdir -p ~/.local/bin && ln -s -f $(pwd)/bin/* ~/.local/bin]
