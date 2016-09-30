@@ -11,7 +11,6 @@
     ~/.config/nvim: nvim
     ~/.config/git/config: git/config
     ~/.config/tmux: tmux
-    ~/.config/ssh/config: ssh/config
 
 - shell:
     - [mkdir -p ~/.local/bin && ln -s -f $(pwd)/bin/* ~/.local/bin]
