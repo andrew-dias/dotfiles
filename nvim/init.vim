@@ -1,58 +1,44 @@
-" split cache files from configuration
 let g:netrw_home=$XDG_CACHE_HOME.'/nvim'
 
 " set colorscheme to match terminal
 if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
+	let base16colorspace=256
+	source ~/.vimrc_background
 endif
 
 " set lightline theme
-let g:lightline = {
-      \ 'colorscheme': 'base16',
-      \ }
-
-" shortcut to toggle 'set list'
-nmap <leader>l :set list!<CR>
-set list
-
-" symbols for whitespace
-set listchars=tab:▸\ ,eol:¬,trail:.
+let g:lightline = { 'colorscheme': 'base16' }
 
 " show line numbers
 set number
 
+" list settings
+nmap <leader>l :set list!<CR>
+set listchars=tab:\¦\ ,eol:¬,trail:.
+"set list lcs=tab:▸\ ,eol:¬,trail:.
+
 " set default tab behaviour
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set noexpandtab
+set ts=4 sts=4 sw=4 noexpandtab
 
-" Set tabstop, softtabstop and shiftwidth to the same value
-command! -nargs=* Stab call Stab()
-function! Stab()
-	let l:tabstop = 1 * input('set tabstop = softtabstop = shiftwidth = ')
-	if l:tabstop > 0
-		let &l:sts = l:tabstop
-		let &l:ts = l:tabstop
-		let &l:sw = l:tabstop
-	endif
-	call SummarizeTabs()
+if has("autocmd")
+	:filetype on
+
+	autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+	autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+
+	" strip trailing whitespace on every save
+	autocmd BufWritePre *.py,*.js :call <SID>StripTrailingWhitespaces()
+endif
+
+" strip training whitespaces
+function! <SID>StripTrailingWhitespaces()
+	" Preparation: save last search, and cursor position.
+	let _s=@/
+	let l = line(".")
+	let c = col(".")
+	" Do the business:
+	%s/\s\+$//e
+	" Clean up: restore previous search history, and cursor position
+	let @/=_s
+	call cursor(l, c)
 endfunction
-
-function! SummarizeTabs()
-	try
-		echohl ModeMsg
-		echon 'tabstop='.&l:ts
-		echon ' shiftwidth='.&l:sw
-		echon ' softtabstop='.&l:sts
-		if &l:et
-			echon ' expandtab'
-		else
-			echon ' noexpandtab'
-		endif
-	finally
-		echohl None
-	endtry
-endfunction
-
