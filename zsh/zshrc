@@ -1,8 +1,16 @@
+# Plugins
+export ZPLUG_HOME=$HOME/.config/zsh/zplug
+source $ZPLUG_HOME/init.zsh
+
+export NVM_DIR=$HOME/.local/share/nvm
+zplug "lukechilds/zsh-nvm"
+zplug "mafredri/zsh-async"
+zplug "sindresorhus/pure"
+zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug load
+
 # add local binaries to PATH
 export PATH=$HOME/.local/bin:$PATH
-
-# zsh local function path
-fpath=( "$HOME/.config/zsh/functions" $fpath )
 
 # enable suggestions for commands not found
 source /etc/zsh_command_not_found
@@ -15,9 +23,6 @@ source $HOME/.config/zsh/bootstrap.zsh
 
 #Aliases
 source $HOME/.config/zsh/aliases.zsh
-
-# Plugins
-source $HOME/.config/zsh/plugins.zsh
 
 # Dircolors
 source $HOME/.config/zsh/dircolors.zsh
