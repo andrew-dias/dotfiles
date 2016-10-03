@@ -14,8 +14,6 @@ endif
 " set lightline theme
 let g:lightline = { 'colorscheme': 'base16' }
 
-let g:netrw_home=$HOME/.cache/nvim'
-
 " show line numbers
 set relativenumber
 
