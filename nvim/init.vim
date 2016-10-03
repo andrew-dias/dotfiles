@@ -1,4 +1,9 @@
-let g:netrw_home=$XDG_CACHE_HOME.'/nvim'
+" Plugins (vim-plug)
+call plug#begin()
+Plug 'chriskempson/base16-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'daviesjamie/vim-base16-lightline'
+call plug#end()
 
 " set colorscheme to match terminal
 if filereadable(expand("~/.vimrc_background"))
@@ -9,8 +14,10 @@ endif
 " set lightline theme
 let g:lightline = { 'colorscheme': 'base16' }
 
+let g:netrw_home=$HOME/.cache/nvim'
+
 " show line numbers
-set number
+set relativenumber
 
 " list settings
 nmap <leader>l :set list!<CR>
@@ -42,3 +49,4 @@ function! <SID>StripTrailingWhitespaces()
 	let @/=_s
 	call cursor(l, c)
 endfunction
+

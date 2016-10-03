@@ -1,1 +1,0 @@
-base16-vim/colors/base16-harmonic16-dark.vim
