@@ -3,7 +3,7 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config', '~/.config/git', '~/.local/bin']
+- clean: ['~', '~/.config', '~/.config/git', '~/.local/bin', '~/.atom']
 
 - link:
     ~/.config/base16-shell: base16-shell
@@ -11,6 +11,11 @@
     ~/.config/nvim: nvim
     ~/.config/git/config: git/config
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.atom/config.cson: atom/config.cson
+    ~/.atom/init.coffee: atom/init.coffee
+    ~/.atom/keymap.cson: atom/keymap.cson
+    ~/.atom/snippets.cson: atom/snippets.cson
+    ~/.atom/styles.less: atom/styles.less
 
 - shell:
     - [mkdir -p ~/.local/bin && ln -s -f $(pwd)/bin/* ~/.local/bin]

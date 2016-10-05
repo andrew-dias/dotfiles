@@ -1,0 +1,11 @@
+"*":
+  "exception-reporting":
+    userId: "43d779d6-ad7a-3def-ae51-71c4b787fa71"
+  welcome:
+    showOnStartup: false
+".ini.source":
+  editor:
+    showIndentGuide: false
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
