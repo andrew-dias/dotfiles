@@ -8,8 +8,8 @@ call plug#end()
 
 " set colorscheme to match terminal
 if filereadable(expand("~/.vimrc_background"))
-	let base16colorspace=256
-	source ~/.vimrc_background
+  let base16colorspace=256
+  source ~/.vimrc_background
 endif
 
 " set lightline theme
@@ -20,5 +20,5 @@ set relativenumber
 
 " list settings
 nmap <leader>l :set list!<CR>
-set listchars=tab:\¦\ ,eol:¬,trail:.
+set list listchars=tab:\¦\ ,eol:¬,trail:.
 "set list lcs=tab:▸\ ,eol:¬,trail:.
