@@ -4,6 +4,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'daviesjamie/vim-base16-lightline'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " set colorscheme to match terminal
@@ -22,9 +23,18 @@ set relativenumber
 nmap <leader>l :set list!<CR>
 set list listchars=tab:\¦\ ,eol:¬,trail:.
 
+" break bad habits
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
+" remap Escape key
 inoremap jj <Esc>
+
+" easier split navigation
+nnoremap <C-j> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
