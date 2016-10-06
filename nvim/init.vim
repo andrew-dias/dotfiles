@@ -21,4 +21,10 @@ set relativenumber
 " list settings
 nmap <leader>l :set list!<CR>
 set list listchars=tab:\¦\ ,eol:¬,trail:.
-"set list lcs=tab:▸\ ,eol:¬,trail:.
+
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
+inoremap jj <Esc>
