@@ -6,7 +6,7 @@ export NVM_DIR=$HOME/.local/share/nvm
 zplug "lukechilds/zsh-nvm"
 zplug "sindresorhus/pure"
 zplug "mafredri/zsh-async"
-zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-completions"
 zplug load
 
