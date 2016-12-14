@@ -1,5 +1,5 @@
 " Plugins (vim-plug)
-call plug#begin()
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'daviesjamie/vim-base16-lightline'
