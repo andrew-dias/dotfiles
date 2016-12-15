@@ -7,7 +7,6 @@ zplug "lukechilds/zsh-nvm"
 zplug "sindresorhus/pure"
 zplug "mafredri/zsh-async"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "zsh-users/zsh-completions"
 zplug load
 
 # install missing plugins
