@@ -17,6 +17,7 @@
     ~/.atom/snippets.cson: atom/snippets.cson
     ~/.atom/styles.less: atom/styles.less
     ~/.atom/packages: atom/packages
+    ~/.editorconfig: editorconfig
 
 - shell:
     - [mkdir -p ~/.local/bin && ln -s -f $(pwd)/bin/* ~/.local/bin]
