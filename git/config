@@ -22,3 +22,13 @@
 
 [include]
   path = config.local
+
+[core]
+  editor = code --wait
+
+[diff]
+  tool = default-difftool
+
+[difftool "default-difftool"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+
