@@ -13,6 +13,7 @@
   status-all = "!for d in `find . -name \".git\"`; do echo \"\n*** Repository: $d ***\" && git --git-dir=$d --work-tree=$d/.. status; done"
   branch-status = "git-branch-status;"
   branch-status-all = "git-branch-status-all;"
+  submodule-update = submodule update --recursive --remote
 
 [push]
   default = simple
