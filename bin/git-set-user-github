@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git config user.name "Andrew Dias"
+git config user.email andrew-dias@users.noreply.github.com
+
