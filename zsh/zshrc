@@ -22,9 +22,6 @@ source /etc/zsh_command_not_found
 # Settings
 source $HOME/.config/zsh/settings.zsh
 
-# Bootstrap
-source $HOME/.config/zsh/bootstrap.zsh
-
 #Aliases
 source $HOME/.config/zsh/aliases.zsh
 
