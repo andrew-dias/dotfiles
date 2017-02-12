@@ -11,12 +11,6 @@
     ~/.config/nvim: nvim
     ~/.config/git/config: git/config
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.atom/config.cson: atom/config.cson
-    ~/.atom/init.coffee: atom/init.coffee
-    ~/.atom/keymap.cson: atom/keymap.cson
-    ~/.atom/snippets.cson: atom/snippets.cson
-    ~/.atom/styles.less: atom/styles.less
-    ~/.atom/packages: atom/packages
     ~/.editorconfig: editorconfig
     ~/.ssh/config: ssh/config
 
