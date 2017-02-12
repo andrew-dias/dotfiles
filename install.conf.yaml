@@ -15,6 +15,6 @@
     ~/.ssh/config: ssh/config
 
 - shell:
-    - [mkdir -p ~/.local/bin && ln -s -f $(pwd)/bin/* ~/.local/bin]
+    - [mkdir -p ~/bin && ln -s -f $(pwd)/bin/* ~/bin]
     - [git submodule update --init --recursive, Installing submodules]
 
