@@ -3,5 +3,3 @@ Host github
   User git
   IdentityFile ~/.ssh/dias.andrew@gmail.com
 
-Include config.local
-
