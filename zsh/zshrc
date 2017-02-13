@@ -13,8 +13,8 @@ if ! zplug check --verbose; then
     zplug install
 fi
 
-# add local binaries to PATH
-export PATH=$HOME/.local/bin:$PATH
+# set environment variables
+source $HOME/.config/zsh/env.zsh
 
 # enable suggestions for commands not found
 source /etc/zsh_command_not_found
