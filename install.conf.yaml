@@ -3,7 +3,7 @@
       create: true
       relink: true
 
-- clean: ['~', '~/.config', '~/.config/git', '~/.local/bin', '~/.atom']
+- clean: ['~', '~/.config', '~/.config/git', '~/.config/zsh', '~/.config/nvim', '~/.config/base16-shell', '~/bin']
 
 - link:
     ~/.config/base16-shell: base16-shell
