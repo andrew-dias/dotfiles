@@ -17,7 +17,7 @@ endif
 let g:lightline = { 'colorscheme': 'base16' }
 
 " show line numbers
-set relativenumber
+set number
 
 " list settings
 nmap <leader>l :set list!<CR>
