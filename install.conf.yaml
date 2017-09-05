@@ -12,6 +12,7 @@
     ~/.config/git/config: git/config
     ~/.tmux.conf: tmux/tmux.conf
     ~/.editorconfig: editorconfig
+    ~/.ideavimrc: ideavimrc
 
 - shell:
     - [mkdir -p ~/bin && ln -s -f $(pwd)/bin/* ~/bin]
