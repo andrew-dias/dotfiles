@@ -1,6 +1,5 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "window.zoomLevel": 1,
-  "editor.fontSize": 12,
-  "vsicons.presets.angular": false
+  "editor.fontSize": 12
 }
