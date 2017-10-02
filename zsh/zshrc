@@ -6,6 +6,7 @@ zplug "lukechilds/zsh-nvm"
 zplug "sindresorhus/pure"
 zplug "mafredri/zsh-async"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "rupa/z", use:z.sh
 zplug load
 
 # install missing plugins
