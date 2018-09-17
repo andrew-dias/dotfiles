@@ -19,6 +19,10 @@ let g:lightline = { 'colorscheme': 'base16' }
 " show line numbers
 set number
 
+" set search case-sensitivity
+set ignorecase
+set smartcase
+
 " list settings
 nmap <leader>l :set list!<CR>
 set list listchars=tab:\¦\ ,eol:¬,trail:.
