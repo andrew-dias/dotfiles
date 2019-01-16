@@ -11,6 +11,7 @@
     ~/.config/nvim: nvim
     ~/.config/git/config: git/config
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux/plugins/tpm: tmux/tpm
     ~/.editorconfig: editorconfig
     ~/.ideavimrc: ideavimrc
 
