@@ -1,3 +1,6 @@
+# DEPRECATED FEB 2019 - MIGRATED TO ANSIBLE
+See https://github.com/andrew-dias/ansible-role-dev-machine
+
 # dotfiles
 
 This dotfiles repo is powered by [dotbot](https://git.io/dotbot).
